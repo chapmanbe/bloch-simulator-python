@@ -1,11 +1,11 @@
 import numpy as np
 import scipy as sp
 
-from bloch.bloch_simulator import bloch_c
+from . bloch_simulator import bloch_c
 
-from bloch.bloch_processing import NUMBER
-from bloch.bloch_processing import process_gradient_argument, process_time_points, process_off_resonance_arguments
-from bloch.bloch_processing import process_positions, process_magnetization, reshape_matrices
+from . bloch_processing import NUMBER
+from . bloch_processing import process_gradient_argument, process_time_points, process_off_resonance_arguments
+from . bloch_processing import process_positions, process_magnetization, reshape_matrices
 
 def bloch(b1, gr, tp, t1, t2, df, dp, mode, mx=None, my=None, mz=None):
     """

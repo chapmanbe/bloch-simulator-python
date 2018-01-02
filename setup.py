@@ -1,6 +1,9 @@
 from distutils.core import setup, Extension
-import numpy.distutils.misc_util
+import numpy
 
+bloch_simulator = Extension("bloch_simulator",
+                            include_dirs = [numpy.get_include()],
+                            sources = ["bloch/bloch_simulator.c"])
 setup(
         name = "Bloch Simulator Library",
         version = "1.0",
@@ -9,7 +12,6 @@ setup(
         author_email = "neji49@gmail.com",
         url = "https://github.com/neji49/bloch-simulator-python",
         packages = ["bloch"],
-        ext_modules=[Extension("bloch.bloch_simulator", ["bloch/bloch_simulator.c"])],
-        include_dirs=numpy.distutils.misc_util.get_numpy_include_dirs(),
+        ext_modules=[bloch_simulator]
         )
 
