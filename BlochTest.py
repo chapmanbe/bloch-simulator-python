@@ -2,9 +2,10 @@ import os.path
 import unittest 
 
 import numpy as np
-import scipy.io as sio
 
 from bloch.bloch import bloch
+
+#from IPython.terminal.debugger import TerminalPdb; TerminalPdb().set_trace()
 
 TEST_DIR = "test_data"
 

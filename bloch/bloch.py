@@ -1,7 +1,6 @@
 import numpy as np
-import scipy as sp
 
-from . bloch_simulator import bloch_c
+from bloch_simulator import bloch_c
 
 from . bloch_processing import NUMBER
 from . bloch_processing import process_gradient_argument, process_time_points, process_off_resonance_arguments
